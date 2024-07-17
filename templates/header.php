@@ -1,4 +1,3 @@
-<!-- templates/header.php -->
 <!DOCTYPE html>
 <html>
 

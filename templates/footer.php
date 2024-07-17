@@ -1,8 +1,7 @@
-<!-- templates/footer.php -->
 <hr>
 <footer>
-    <p> Kunal Sharma </p>
+    <p> Case Study </p>
 </footer>
 </body>
-
+    
 </html>
