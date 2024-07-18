@@ -21,7 +21,8 @@
 
 <body>
     <h1>Welcome Caryon Infotech</h1>
-    <a href="../public/index.php">Home</a> | <a href="../templates/create_user_form.php">Create User</a> | <a href="../templates/add_experience_form.php">Add Experience</a>
+    <a href="../public/index.php">Home</a> | <a href="../templates/create_user_form.php">Create User</a> | <a href="../templates/add_experience_form.php">Add Experience</a> | <a href="../public/delete_user.php">Delete User/Experience</a> | <a href="../public/update_user.php">Update User/Experience</a>
     <hr>
 </body>
+
 </html>
