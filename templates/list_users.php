@@ -31,7 +31,7 @@ $rs_result = $conn->query($sql);
             <td><?php echo $row["mobile"]; ?></td>
             <td><?php echo $row["gender"]; ?></td>
             <td>
-                <a href="update_user_form.php?id=<?php echo $row['id']; ?>">Update</a> |
+                <a href="update_user.php?id=<?php echo $row['id']; ?>">Update</a> |
                 <a href="delete_user.php?id=<?php echo $row['id']; ?>" onclick="return confirm('Are you sure?')">Delete</a></li>
             </td>
         </tr>
@@ -39,6 +39,7 @@ $rs_result = $conn->query($sql);
     };
     ?>
 </table>
+
 
 <?php
 $sql = "SELECT COUNT(id) FROM users";
@@ -74,7 +75,6 @@ $start_from = ($page - 1) * $limit;
 $sql = "SELECT * FROM experience ORDER BY id ASC LIMIT $start_from, $limit";
 $rs_result = $conn->query($sql);
 ?>
-
 <table border="1">
     <tr>
         <th>ID</th>
