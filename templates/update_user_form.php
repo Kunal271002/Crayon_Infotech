@@ -12,8 +12,7 @@ if (isset($_GET['id'])) {
     }
 }
 ?>
-
-<form name="userForm" action="update_user.php?id=<?php echo $id; ?>" onsubmit="return validateForm()" method="post">
+<form name="userForm" action="../public/update_user.php?id=<?php echo $id; ?>" onsubmit="return validateForm()" method="post">
     Name: <input type="text" name="name" value="<?php echo $row['name']; ?>"><br>
     Email: <input type="text" name="email" value="<?php echo $row['email']; ?>"><br>
     Mobile: <input type="text" name="mobile" value="<?php echo $row['mobile']; ?>"><br>

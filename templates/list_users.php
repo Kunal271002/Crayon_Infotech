@@ -31,8 +31,8 @@ $rs_result = $conn->query($sql);
             <td><?php echo $row["mobile"]; ?></td>
             <td><?php echo $row["gender"]; ?></td>
             <td>
-                <a href="update_user.php?id=<?php echo $row['id']; ?>">Update</a> |
-                <a href="delete_user.php?id=<?php echo $row['id']; ?>" onclick="return confirm('Are you sure?')">Delete</a></li>
+                <a href="../templates/update_user_form.php?id=<?php echo $row['id']; ?>">Update</a> |
+                <a href="../public/delete_user.php?id=<?php echo $row['id']; ?>" onclick="return confirm('Are you sure?')">Delete</a></li>
             </td>
         </tr>
     <?php
@@ -61,6 +61,8 @@ $total_pages = ceil($total_records / $limit);
         ?>
     </ul>
 </div>
+
+<h2> Experience </h2>
 <?php
 // templates/list_users.php
 $limit = 5;
@@ -93,8 +95,8 @@ $rs_result = $conn->query($sql);
             <td><?php echo $row["years"]; ?></td>
             <td><?php echo $row["months"]; ?></td>
             <td>
-                <a href="update_user_form.php?id=<?php echo $row['id']; ?>">Update</a> |
-                <a href="delete_user.php?id=<?php echo $row['id']; ?>" onclick="return confirm('Are you sure?')">Delete</a></li>
+                <a href="../templates/update_experience_form.php?id=<?php echo $row['id']; ?>">Update</a> |
+                <a href="../public/delete_experience.php?id=<?php echo $row['id']; ?>" onclick="return confirm('Are you sure?')">Delete</a></li>
             </td>
         </tr>
     <?php

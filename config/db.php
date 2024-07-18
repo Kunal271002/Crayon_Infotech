@@ -1,4 +1,9 @@
 <?php
+
+// Database has been Created Manually using Xampp server.
+// Database information has been given below
+//password is none
+
 $servername = "localhost";
 $username = "root";
 $password = "";

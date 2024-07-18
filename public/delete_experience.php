@@ -6,7 +6,7 @@ if (isset($_GET['id'])) {
     $id = $_GET['id'];
 
     // Delete experience
-    $sql = "DELETE FROM experience WHERE user_id=$id";
+    $sql = "DELETE FROM experience WHERE id=$id";
 
     if ($conn->query($sql) === TRUE) {
         echo "Experience deleted successfully";
