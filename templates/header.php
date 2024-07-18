@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>CRUD</title>
+    <title>Case Study</title>
     <script>
         function validateForm() {
             var name = document.forms["userForm"]["name"].value;
